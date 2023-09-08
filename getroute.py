@@ -18,8 +18,8 @@ def details():
     if time_diff < -2 or time_diff > 2:
         time_validation = 'outside +/-2 hours'
         
-    git_file = 'https://github.com/Gabby1937/API-Endpoint.git'
-    git_repo = 'https://github.com/Gabby1937/API-Endpoint.git'
+    git_file = 'https://github.com/Gabby1937/API-Endpoint/blob/main/getroute.py'
+    git_repo = 'https://github.com/Gabby1937/API-Endpoint'
     
     response = {
         "slack_name": slack_name,
