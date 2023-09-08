@@ -23,7 +23,7 @@ def get_info():
         "slack_name": slack_name,
         "track": track,
         "current_day": current_day,
-        "utc_time" : present_time.strftime('%y-%m-%d %H:%M:%S UTC'),
+        "utc_time" : present_time.strftime('%Y-%m-%dT%H:%M:%SZ'),
         "time_validation": time_validation,
         "github_file_url" : git_file,
         "github_repo_url" : git_repo,
