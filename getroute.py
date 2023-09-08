@@ -13,7 +13,7 @@ def details():
     current_day = datetime.now(pytz.UTC).strftime('%A')
     present_time = datetime.now(pytz.UTC)
     
-    time_diff = current_day.utcoffset().total_seconds() / 3600
+    time_diff = present_time.utcoffset().total_seconds() / 3600
     time_validation = 'within +/-2 hours'
     if time_diff < -2 or time_diff > 2:
         time_validation = 'outside +/-2 hours'
