@@ -1,1 +1,1 @@
-web: gunicorn app:getroute
+web: gunicorn getroute:app

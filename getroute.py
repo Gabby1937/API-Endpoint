@@ -14,9 +14,7 @@ def details():
     present_time = datetime.now(pytz.UTC)
     
     time_diff = present_time.utcoffset().total_seconds() / 3600
-    time_validation = 'within +/-2 hours'
-    if time_diff < -2 or time_diff > 2:
-        time_validation = 'outside +/-2 hours'
+    time_validation = time_validation = 'within +/-2 hours' if -2 <= time_diff <= 2 else 'outside +/-2 hours'
         
     git_file = 'https://github.com/Gabby1937/API-Endpoint/blob/main/getroute.py'
     git_repo = 'https://github.com/Gabby1937/API-Endpoint'
