@@ -5,8 +5,8 @@ import pytz
 
 app = Flask(__name__)
 
-@app.route('/path', methods=['GET'])
-def details():
+@app.route('/api', methods=['GET'])
+def get_info():
     slack_name = request.args.get('slack_name')
     track = request.args.get('track')
     
